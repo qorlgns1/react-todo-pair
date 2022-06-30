@@ -20,8 +20,9 @@ function App() {
 
     // 1. input 정보를 찾아온다.
     const input = document.getElementsByTagName("input")[0];
+
+    // 2. input value를 가져오기
     const inputValue = input.value;
-    debugger;
   };
 
   return (
