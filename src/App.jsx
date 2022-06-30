@@ -15,21 +15,20 @@ function App() {
   //   console.log(123);
   // }
 
-  const test = (e) => {
+  const handleOnClick = (e) => {
+    // input에 입력된 글자를 가지고 와야 한다.
+
+    // 1. input 정보를 찾아온다.
+    const input = document.getElementsByTagName("input")[0];
+    const inputValue = input.value;
     debugger;
-    console.log(e);
-    if (e.type === "click") {
-      console.log("나 클릭했어!!!");
-    } else {
-      console.log("나 클릭안했어!!");
-    }
   };
 
   return (
     <>
       <h1>ToDoList</h1>
       <input type="text" />
-      <Button onClick={test}>버튼</Button>
+      <Button onClick={handleOnClick}>버튼</Button>
       <TodoListContainer></TodoListContainer>
     </>
   );
